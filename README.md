@@ -1,92 +1,130 @@
-# E-Commerce System
+# E-Commerce System (C++ Console Application)
 
-A modern, full-stack e-commerce platform built with React, Node.js, and MongoDB.
+A modern console-based e-commerce platform built with C++ for efficient and fast performance.
 
 ## Features
 
 - 🛍️ Product catalog with search and filtering
 - 🛒 Shopping cart functionality
 - 👤 User authentication and profiles
-- 💳 Secure payment processing
-- 📱 Responsive design
-- 🔍 Advanced search and filtering
+- 💳 Secure payment processing simulation
 - 📊 Admin dashboard for product management
+- 🔍 Advanced search and filtering
+- 📱 Clean console-based user interface
 
 ## Tech Stack
 
-### Frontend
-- React 18
-- TypeScript
-- Tailwind CSS
-- React Router
-- Axios for API calls
+### Core Technologies
+- **C++17/20** - Modern C++ with advanced features
+- **Standard Template Library (STL)** - For data structures and algorithms
+- **File I/O** - For data persistence
+- **Console UI** - Clean and intuitive interface
 
-### Backend
-- Node.js
-- Express.js
-- MongoDB with Mongoose
-- JWT for authentication
-- bcrypt for password hashing
+### Libraries Used
+- `<iostream>` - Console input/output
+- `<vector>` - Dynamic arrays for products and users
+- `<map>` - Key-value storage for efficient lookups
+- `<string>` - String manipulation
+- `<fstream>` - File operations for data persistence
+- `<algorithm>` - Sorting and searching algorithms
+- `<chrono>` - Time-based operations
+- `<random>` - For generating IDs and random data
 
 ## Project Structure
 
 ```
-e-commerce/
-├── frontend/          # React frontend application
-├── backend/           # Node.js backend API
-├── shared/            # Shared types and utilities
-└── docs/             # Documentation
+e-commerce-cpp/
+├── src/                 # Source files
+│   ├── main.cpp        # Entry point
+│   ├── Product.cpp     # Product class implementation
+│   ├── User.cpp        # User class implementation
+│   ├── Cart.cpp        # Shopping cart functionality
+│   ├── Admin.cpp       # Admin operations
+│   └── Utils.cpp       # Utility functions
+├── include/            # Header files
+│   ├── Product.h       # Product class definition
+│   ├── User.h          # User class definition
+│   ├── Cart.h          # Cart class definition
+│   ├── Admin.h         # Admin class definition
+│   └── Utils.h         # Utility function declarations
+├── data/               # Data files
+│   ├── products.txt    # Product database
+│   ├── users.txt       # User database
+│   └── orders.txt      # Order history
+├── docs/               # Documentation
+└── tests/              # Unit tests
 ```
 
 ## Getting Started
 
 ### Prerequisites
-- Node.js (v18 or higher)
-- MongoDB
-- Git
+- **C++ Compiler** (GCC 7+, Clang 6+, or MSVC 2017+)
+- **Make** or **CMake** for building
+- **Git** for version control
 
 ### Installation
 
 1. Clone the repository:
 ```bash
-git clone <your-github-repo-url>
-cd e-commerce
+git clone https://github.com/Ahito498/e-commerce-system.git
+cd e-commerce-system
 ```
 
-2. Install dependencies:
+2. Build the project:
 ```bash
-# Install backend dependencies
-cd backend
-npm install
+# Using Make
+make
 
-# Install frontend dependencies
-cd ../frontend
-npm install
+# Or using CMake
+mkdir build && cd build
+cmake ..
+make
 ```
 
-3. Set up environment variables:
+3. Run the application:
 ```bash
-# Backend (.env)
-cp backend/.env.example backend/.env
-# Edit the .env file with your configuration
-
-# Frontend (.env)
-cp frontend/.env.example frontend/.env
+./ecommerce
 ```
 
-4. Start the development servers:
-```bash
-# Start backend (from backend directory)
-npm run dev
+## Features Overview
 
-# Start frontend (from frontend directory)
-npm start
-```
+### User Features
+- **Registration & Login**: Secure user account management
+- **Product Browsing**: View all available products with details
+- **Search & Filter**: Find products by name, category, or price range
+- **Shopping Cart**: Add/remove items, view cart, checkout
+- **Order History**: View past orders and their status
+
+### Admin Features
+- **Product Management**: Add, edit, delete products
+- **User Management**: View and manage user accounts
+- **Order Management**: Process and track orders
+- **Sales Reports**: View sales statistics and analytics
+
+### Technical Features
+- **Data Persistence**: All data saved to text files
+- **Input Validation**: Robust error handling and validation
+- **Clean UI**: Well-organized console interface
+- **Modular Design**: Easy to extend and maintain
 
 ## Development
 
-- Backend runs on: http://localhost:5000
-- Frontend runs on: http://localhost:3000
+### Building from Source
+```bash
+# Debug build
+make debug
+
+# Release build
+make release
+
+# Clean build
+make clean
+```
+
+### Running Tests
+```bash
+make test
+```
 
 ## Contributing
 
@@ -95,6 +133,14 @@ npm start
 3. Commit your changes: `git commit -m 'Add feature'`
 4. Push to the branch: `git push origin feature-name`
 5. Submit a pull request
+
+## Code Style
+
+- Follow C++ Core Guidelines
+- Use meaningful variable and function names
+- Add comments for complex logic
+- Keep functions small and focused
+- Use const correctness where appropriate
 
 ## License
 
