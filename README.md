@@ -123,42 +123,23 @@ sara_hasan: Item arrived expired.
 
 ---
 
-### 🧪 Test Cases
+### 🧪 Testing
 
-Place your manual test scenarios (as .md files) under a `/tests/` folder, like so:
+The project includes manual test cases in the `tests/` directory. Each test case is documented with:
+- Preconditions
+- Step-by-step instructions
+- Expected results
+- Screenshots (when applicable)
 
-```
-tests/
-  TC001_add_to_cart.md
-  TC002_checkout_insufficient_funds.md
-  screenshots/
-    TC001_screenshot1.png
-    TC002_screenshot1.png
-```
-
-Each test case file should include:
-
-```markdown
-# TC001: Add to Cart – Valid Product
-
-**Precondition:** Logged in as `ahmed123`  
-**Steps:**  
-1. Go to "Add Product to Cart"  
-2. Choose product #1  
-3. Add quantity 2  
-
-**Expected:**  
-- Product added successfully  
-- Cart lists item with correct quantity
-
-**Screenshot:** `screenshots/TC001_screenshot1.png`
-```
-
-GitHub will display these for testers. You can also import them into TestRail or GitHub Issues/Projects if desired. These files should be committed alongside your code—they document your project's test coverage.
+Test cases are located in:
+- `tests/TC001_add_to_cart.md`
+- `tests/TC002_checkout_insufficient_funds.md`
+- `tests/screenshots/` - for test case screenshots
 
 ---
 
-### 🧼 Cleanup Checklist (Pre-Publish)
+### 🧼 Development Checklist
+
 - ✅ Ensure all .txt files exist in data/
 - ✅ Remove any absolute paths (use relative data/)
 - ✅ No auto types — all loops explicit
@@ -168,9 +149,11 @@ GitHub will display these for testers. You can also import them into TestRail or
 ---
 
 ### ⏭ What's Next?
+
 - Add unit tests (e.g., GoogleTest)
 - Enable CI via GitHub Actions
 - Add support for product search/filtering
+- Implement advanced features like discounts and promotions
 
 ---
 
@@ -180,13 +163,14 @@ This project is licensed under the MIT License.
 
 ---
 
-### 📌 Where to Upload Test Cases?
-- Create a `tests/` folder at the repo root.
-- Add `.md` files for each test scenario.
-- Include a note in README linking to them.
-- CI workflows can later run these as manual checks.
+### 🤝 Contributing
 
-### 📸 Screenshots Location
-- Place all test case screenshots in `tests/screenshots/`
-- Reference them in your test case `.md` files
-- Use descriptive names like `TC001_login_success.png` 
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature-name`
+3. Commit your changes: `git commit -m 'Add feature'`
+4. Push to the branch: `git push origin feature-name`
+5. Submit a pull request
+
+### 📞 Support
+
+For questions or issues, please open an issue on GitHub. 
