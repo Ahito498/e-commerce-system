@@ -14,24 +14,47 @@ A C++ console application simulating a simple e-commerce flow with:
 ```
 /FawryTask
 │
-├─ admin/               # Admin session logic (product management, complaints)
-├─ cart/                # CartItem, Cart implementation
-├─ customer/            # Customer auth, session, order history
-├─ products/            # Product hierarchy & storage
-├─ shipping/            # ShippingService
-├─ orders/              # OrderStorage
-├─ io/                  # InputValidator, ConsolePrinter
-├─ data/                # SQLite-like .txt storage files
-│   ├ customers.txt
-│   ├ products.txt
-│   ├ orders.txt
-│   └ complaints.txt
-├─ tests/               # Test case documentation
-│   ├ TC001_add_to_cart.md
-│   ├ TC002_checkout_insufficient_funds.md
-│   └ screenshots/      # Screenshots for test cases
-├─ main.cpp             # Entry point & menu
-└─ README.md            # Project documentation
+├─ Admin/                # Admin session logic (product management, complaints)
+│   ├─ Admin.cpp
+│   ├─ Admin.h
+│   ├─ Complaint.cpp
+│   └─ Complaint.h
+├─ Customer/             # Customer auth, session, order history
+│   ├─ Customer.cpp
+│   ├─ Customer.h
+│   ├─ Cart.cpp
+│   ├─ Cart.h
+│   ├─ CartItem.cpp
+│   ├─ CartItem.h
+│   ├─ CustomerStorage.cpp
+│   └─ CustomerStorage.h
+├─ Product/              # Product hierarchy & storage
+│   ├─ Product.cpp
+│   ├─ Product.h
+│   ├─ DigitalProduct.cpp
+│   ├─ DigitalProduct.h
+│   ├─ ShippableProduct.cpp
+│   ├─ ShippableProduct.h
+│   ├─ ProductStorage.cpp
+│   └─ ProductStorage.h
+├─ Shipping/             # ShippingService
+│   ├─ ShippingService.cpp
+│   └─ ShippingService.h
+├─ Order/                # OrderStorage
+│   ├─ OrderStorage.cpp
+│   └─ OrderStorage.h
+├─ iv/                   # InputValidator
+│   ├─ InputValidator.cpp
+│   └─ InputValidator.h
+├─ include/              # Additional header files
+├─ Data/                 # Data files (.txt storage)
+│   ├─ customers.txt
+│   ├─ products.txt
+│   ├─ orders.txt
+│   └─ complaints.txt
+├─ main.cpp              # Entry point & menu
+├─ CMakeLists.txt        # Build configuration
+└─ README.md             # Project documentation
 ```
 
 ---
@@ -84,7 +107,7 @@ make
 
 ### 📚 Sample Test Data
 
-#### data/customers.txt
+#### Data/customers.txt
 ```
 ahmed123
 pass123
@@ -95,7 +118,7 @@ sara2024
 750.5
 ```
 
-#### data/products.txt
+#### Data/products.txt
 ```
 shippable
 Power Bank
@@ -112,13 +135,13 @@ Vodafone Recharge 50EGP
 2026-05-01
 ```
 
-#### data/complaints.txt
+#### Data/complaints.txt
 ```
 ahmed123: Late product delivery.
 sara_hasan: Item arrived expired.
 ```
 
-#### data/orders.txt
+#### Data/orders.txt
 (Initially empty; populated after checkout.)
 
 ---
@@ -499,12 +522,6 @@ Process finished with exit code 0
 - Enable CI via GitHub Actions
 - Add support for product search/filtering
 - Implement advanced features like discounts and promotions
-
----
-
-### 📄 License
-
-This project is licensed under the MIT License.
 
 ---
 
