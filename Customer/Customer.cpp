@@ -51,12 +51,12 @@ string Customer::getPassword() const {
 
 namespace CustomerSession {
 
-    vector<Customer> customers = CustomerStorage::loadFromFile("/Users/macstoreeg/Projects/FawryTask/Data/customers.txt");
+    vector<Customer> customers = CustomerStorage::loadFromFile("../Data/customers.txt");
     Cart cart;
     Customer* loggedInCustomer = nullptr;
 
     void save() {
-        CustomerStorage::saveToFile("/Users/macstoreeg/Projects/FawryTask/Data/customers.txt", customers);
+        CustomerStorage::saveToFile("../Data/customers.txt", customers);
     }
 
     void login() {
@@ -246,7 +246,7 @@ void checkout() {
     cout << "\nOrder placed successfully." << endl;
 
     // Save order to file
-    OrderStorage::saveOrder("/Users/macstoreeg/Projects/FawryTask/Data/orders.txt",
+    OrderStorage::saveOrder("../Data/orders.txt",
                             loggedInCustomer->getUsername(),
                             items,
                             shippingCost,
@@ -259,7 +259,7 @@ void checkout() {
             return;
         }
 
-        ifstream file("/Users/macstoreeg/Projects/FawryTask/Data/orders.txt");
+        ifstream file("../Data/orders.txt");
         if (!file.is_open()) {
             cout << "No order history found." << endl;
             return;

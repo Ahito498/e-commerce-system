@@ -166,7 +166,7 @@ namespace AdminSession {
         if (!authenticate()) {
             return;
         }
-        productList = ProductStorage::loadFromFile("/Users/macstoreeg/Projects/FawryTask/Data/products.txt");
+        productList = ProductStorage::loadFromFile("../Data/products.txt");
 
 
         while (true) {
@@ -199,7 +199,7 @@ namespace AdminSession {
                     cout << "Logging out..." << endl;
                 return;
             }
-            ProductStorage::saveToFile("/Users/macstoreeg/Projects/FawryTask/Data/products.txt", productList);
+            ProductStorage::saveToFile("../Data/products.txt", productList);
 
             cout << endl;
         }
@@ -207,7 +207,7 @@ namespace AdminSession {
 
     }
     void viewComplaints() {
-        vector<Complaint> complaints = Complaint::loadFromFile("/Users/macstoreeg/Projects/FawryTask/Data/complaints.txt");
+        vector<Complaint> complaints = Complaint::loadFromFile("../Data/complaints.txt");
 
         if (complaints.empty()) {
             cout << "No complaints found." << endl;
@@ -246,7 +246,7 @@ namespace AdminSession {
         }
     }
     const std::vector<std::unique_ptr<Product>>& AdminSession::getProductList() {
-        return productList = ProductStorage::loadFromFile("/Users/macstoreeg/Projects/FawryTask/Data/products.txt");
+        return productList = ProductStorage::loadFromFile("../Data/products.txt");
     }
 
 }

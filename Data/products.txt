@@ -22,9 +22,3 @@ Digital
 0
 0
 1
-Shippable
-chips
-2
-100
-0.2
-2025-11-18
