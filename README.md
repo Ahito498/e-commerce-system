@@ -140,11 +140,43 @@ Test cases are located in:
 
 ### 🧼 Development Checklist
 
-- ✅ Ensure all .txt files exist in data/
-- ✅ Remove any absolute paths (use relative data/)
-- ✅ No auto types — all loops explicit
-- ✅ No temporary/test stubs in main()
-- ✅ Confirm README + .gitignore are present
+#### ✅ Completed
+- ✅ Project structure created with all directories
+- ✅ Basic main.cpp with menu system implemented
+- ✅ Sample data files created (customers.txt, products.txt, complaints.txt, orders.txt)
+- ✅ CMakeLists.txt configured for C++20
+- ✅ .gitignore file created
+- ✅ README.md documentation complete
+- ✅ Test case structure created
+
+#### 🔄 In Progress
+- ⏳ Implement proper class structure (Product, User, Cart, Admin)
+- ⏳ Replace placeholder functions with actual functionality
+- ⏳ Add file I/O for data persistence
+- ⏳ Implement authentication system
+- ⏳ Add shopping cart functionality
+- ⏳ Create admin management features
+
+#### 📋 TODO
+- [ ] Implement Product class hierarchy (DigitalProduct, ShippableProduct)
+- [ ] Implement User/Customer authentication system
+- [ ] Implement Cart and CartItem classes
+- [ ] Implement Admin management features
+- [ ] Add input validation and error handling
+- [ ] Implement file-based data persistence
+- [ ] Add order processing and history
+- [ ] Implement shipping service
+- [ ] Add comprehensive test cases
+- [ ] Add unit tests with GoogleTest
+- [ ] Set up CI/CD with GitHub Actions
+
+#### 🚨 Issues to Fix
+- [ ] Remove hardcoded credentials from main.cpp
+- [ ] Replace global variables with proper class instances
+- [ ] Add proper error handling for file operations
+- [ ] Implement proper authentication instead of hardcoded checks
+- [ ] Add input validation for all user inputs
+- [ ] Replace "coming soon" messages with actual functionality
 
 ---
 
