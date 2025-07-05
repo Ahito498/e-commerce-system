@@ -1,3 +1,0 @@
-/Users/macstoreeg/Projects/FawryTask/cmake-build-debug/CMakeFiles/main.cpp.dir
-/Users/macstoreeg/Projects/FawryTask/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/macstoreeg/Projects/FawryTask/cmake-build-debug/CMakeFiles/rebuild_cache.dir
