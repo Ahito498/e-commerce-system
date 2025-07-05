@@ -1,1 +1,4 @@
-
+Customer: ahmed123
+Shipping: 0
+Total: 50
+-----------------------------

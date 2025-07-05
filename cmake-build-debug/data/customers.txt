@@ -3,7 +3,7 @@ pass123
 500
 sara_hasan
 sara2024
-750
+750.5
 mohamed_ali
 mAli88
 1200

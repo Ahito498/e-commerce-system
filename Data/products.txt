@@ -1,29 +1,30 @@
-shippable
+Digital
 Power Bank 10000mAh
 350
 10
-0.8
+0
 2025-12-01
-digital
+Digital
 Vodafone Recharge 50EGP
 50
 100
 0
 2026-05-01
-shippable
+Digital
 USB-C Charger
 80
 20
-0.3
-shippable
-Wireless Mouse
+0
+1
+Digital
 200
 5
-0.4
-2024-12-31
-digital
-Etisalat Recharge 100EGP
-100
-80
 0
-2025-09-01
+0
+1
+Shippable
+chips
+2
+100
+0.2
+2025-11-18

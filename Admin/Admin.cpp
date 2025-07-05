@@ -91,7 +91,7 @@ namespace AdminSession {
         cout << "----- Product List -----" << endl;
         for (size_t i = 0; i < productList.size(); ++i) {
             cout << "[" << i + 1 << "] ";
-            productList[i]->printDetails();
+            productList[i]->printDetails(); // this works if everything above is correct
         }
     }
     int selectProduct() {
