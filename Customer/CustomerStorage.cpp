@@ -13,7 +13,7 @@ void CustomerStorage::saveToFile(const string& filename, const vector<Customer>&
 
     for (size_t i = 0; i < list.size(); ++i) {
         file << list[i].getUsername() << endl;
-        file << list[i].checkPassword("") << endl;  // fix: instead use password field (see below)
+        file << list[i].checkPassword("") << endl;
         file << list[i].getBalance() << endl;
     }
 

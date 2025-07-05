@@ -207,7 +207,7 @@ namespace AdminSession {
 
     }
     void viewComplaints() {
-        vector<Complaint> complaints = Complaint::loadFromFile("data/complaints.txt");
+        vector<Complaint> complaints = Complaint::loadFromFile("/Users/macstoreeg/Projects/FawryTask/Data/complaints.txt");
 
         if (complaints.empty()) {
             cout << "No complaints found." << endl;
